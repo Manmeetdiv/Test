@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login.css">
+  <title>Document</title>
+</head>
+<body class="bg-pink">
+  <form class="center-text" id="loginForm">
+    <div>
+      <div class="text-style center-item">
+        <p>Ashyam Grievance Portal</p>
+        <img src="lovemsg.png" alt="love-msg" class="img-style" width="70px" height="70px">
+      </div>
+      <div class="center-item">
+        <div>
+          <input id="userinput" type="text" placeholder="Enter your username">
+          <input id="passwordinput" type="password" placeholder="Password">
+        </div>
+      </div>
+      <div class="center-item">
+          <button type="submit" class="btn-style" onclick="userInputer()">Login</button>
+      </div>
+    </div>
+  </form>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission and page reload
+
+      const user1 = 'ashyam';
+      const pass1 = '12341234';
+
+      const username1 = document.getElementById('userinput').value;
+      const password1 = document.getElementById('passwordinput').value;
+
+      if (username1 === user1 && password1 === pass1) {
+        window.location.replace('welcome.html'); // Redirect to a valid HTML page
+      } else {
+        alert('Invalid username or password');
+      }
+    });
+  </script>
+</body>
+</html>

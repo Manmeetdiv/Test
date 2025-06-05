@@ -1,0 +1,25 @@
+.bg-pink {background-color: pink;}
+.center-item {justify-content: center;display: flex;align-items: center;}
+
+
+
+
+
+input {display:block ;margin: 30px ;padding: 10px 10px;font-size: 40px;border-radius: 10px;
+      background-color: white;border: 3px solid black;transition: 0.5s;
+}
+
+input:focus {
+  background-color:rgb(236, 168, 225);border: 3px solid purple;transition: 0.5s;outline: none;
+}
+input:active {
+  background-color:rgb(236, 168, 225);border: 3px solid purple;transition: 0.5s;
+}
+
+.img-style {font-size: 1%;}
+.center-text {display: flex;justify-content:center;align-items: center;}
+.text-style {font-family: 'Courier New', Courier, monospace;font-weight: 700;font-style: italic;font-size: 40px;}
+
+
+.btn-style {border-radius: 6%;padding: 30px 110px;background-color: rgb(228, 56, 85);border: none;}
+
