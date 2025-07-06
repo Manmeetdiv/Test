@@ -1,9 +1,12 @@
 .bg-pink {background-color: pink;}
 .center-item {justify-content: center;display: flex;align-items: center;}
 
-
-
-
+@media only screen and (max-width: 600px) {
+  body {.text-style {font-family: 'Courier New', Courier, monospace;font-weight: 700;font-style: italic;font-size: 30px;}
+  }
+input {font-size: 20px !important;
+}
+}
 
 input {display:block ;margin: 30px ;padding: 10px 10px;font-size: 40px;border-radius: 10px;
       background-color: white;border: 3px solid black;transition: 0.5s;
