@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="welcome.css">
+  <title>Document</title>
+</head>
+<body class="bg-pink">
+  <form class="center-text" id="loginForm">
+    <div>
+      <div class="text-style center-item">
+        <p>Meeta Grievance Portal</p>
+        <img src="lovemsg.png" alt="love-msg" class="img-style" width="70px" height="70px">
+      </div>
+      <div class="text-style center-item">
+        <div>
+          <p>Let's hear your thoughts and what would makes you happy</p>
+        </div>
+      </div>
+      <div class="img-div text-style">
+        <div>
+          <figure>
+            <img src="Kurkure.webp">
+            <figcaption>Kurkure.</figcaption>
+            <input type="checkbox">
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="Cover.jpg">
+            <figcaption>Guitar Cover.</figcaption>
+            <input type="checkbox">
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="Salon.jpg">
+            <figcaption>Salon.</figcaption>
+            <input type="checkbox">
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="Iphone.png">
+            <figcaption>Iphone.</figcaption>
+            <input type="checkbox">
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="Asscream.jpeg">
+            <figcaption>Asscream.</figcaption>
+            <input type="checkbox">
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="Momo.jpg">
+            <figcaption>Momo.</figcaption>
+            <input type="checkbox">
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="Teddy.webp">
+            <figcaption>Teddy.</figcaption>
+            <input type="checkbox">
+          </figure>
+        </div>
+        <div>
+          <figure>
+            <img src="Tatto.jpg">
+            <figcaption>Tatto.</figcaption>
+            <input type="checkbox">
+          </figure>
+        </div>
+      </div>
+      <div class="center-item">
+          <input id="userinput" type="text" placeholder="Start Yapping here">
+        </div>
+      <div class="center-item">
+          <button type="submit" class="btn-style" onclick="userInputer()">Send Me</button>
+      </div>
+    </div>
+  </form>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission and page reload
+
+      const user1 = 'meeta';
+      const pass1 = '12341234';
+
+      const username1 = document.getElementById('userinput').value;
+      const password1 = document.getElementById('passwordinput').value;
+
+      if (username1 === user1 && password1 === pass1) {
+        window.location.replace('welcome.html'); // Redirect to a valid HTML page
+      } else {
+        alert('Invalid username or password');
+      }
+    });
+  </script>
+</body>
+</html>
